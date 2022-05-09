@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations</title>
+</head>
+<body>
+    <h3>Push, pop, deleting, shifting element of array </h3>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        const arr = ["Dhruv", "Darji" ,"Apple" ,"Banana","windows"];
+        document.getElementById("demo").innerHTML ="<h3>Original list :</h3> " +arr;
+        let a = arr.pop();
+        document.getElementById("demo2").innerHTML ="<h3>popped element :</h3> "+ a;
+        document.getElementById("demo3").innerHTML ="<h3>modified list : </h3>" +arr;
+        arr.push("elephant");
+        document.getElementById("demo4").innerHTML ="<h3>push operation list : </h3>" +arr;
+
+
+        var b = arr.shift();
+        document.getElementById("demo5").innerHTML = "<h3>arrray's shift method : </h3> " + b + "<h3>is shifted and remaing element in a2 are </h3>" + arr  ;
+
+        var a4 = ["alpha", "beta", "gamma"]
+        document.getElementById("demo6").innerHTML = "<h3>Befor unshift operation :</h3> " + a4 ; 
+        a4.unshift("lemon")
+        document.getElementById("demo7").innerHTML = "<h3>unshift operation : </h3>" + a4 ;
+    </script>
+
+</body>
+</html>

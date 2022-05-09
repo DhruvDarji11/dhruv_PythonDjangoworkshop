@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id selector in jquery</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                //$("p#test").hide();
+                //$("p").hide();
+                //$("h3").hide();
+               
+                //$("ul li").hide();
+                $("h3#test").hide();
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>This is an Example of id selector in jquery.</h1>
+    <p id="test">This is para of id test.</p>
+    <h3 id="test">this is h3 of id test.</h3>
+    <span id="test">span od id test.</span>
+    <p id="test">This is another test id para.</p>
+    <h3>Normal h3.</h3>
+    <p>list 1</p>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>cherry</li>
+
+    </ul>
+    <p>list 2</p>
+    <ul>
+        <li>English</li>
+        <li>Hindi</li>
+    </ul>
+    <button>Click to hide all elements id="test" </button>
+</body>
+</html>

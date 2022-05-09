@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get JSON element</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.getJSON("https://gorest.co.in/public-api/users", function(tbldata,status){
+                    console.log(tbldata);
+                    $.each(tbldata.data, function(i, tbldata){
+                        var {id,name,email,gender,status} = tbldata;
+                        $("#outputvalue").append(`<tr><td>${id}</td><td>${name}</td><td>${email}</td><td>${gender}</td><td>${status}</td></tr>`);
+                    });
+                });
+            });
+    </script>
+    <style>
+       table{
+           width: 100%;
+            
+       }
+
+       thead{
+           border-bottom: 2px solid black;
+           color: chocolate ;
+           font-size:xx-large;
+       }
+       tr{
+           font-size: larger;
+           font-style: oblique;
+       }
+    </style>
+</head>
+<body>
+    <table id="outputvalue">
+        <caption>Employee details table</caption>
+        <thead >
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying CSS in Jquery</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("tr:first").css("background-color","red");
+                $("table").css("border-color","yellow");
+                $("tr").css("background-color","green");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>This is random table for application of css in jquery.</h2>
+    <table border="3">
+        <caption>Intro to jQuery</caption>
+        <thead>
+            <tr>
+                <th class="border">hi</th>
+                <th>hello</th>
+                <th>Dhruv</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table> <br>
+    <button>Click on me!!</button>
+</body>
+</html>

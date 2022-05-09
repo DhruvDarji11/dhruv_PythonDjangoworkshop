@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+</head>
+<body>
+    <p>Hi every one!</p>
+    <p class="intro" >This is intro class 1  </p>
+    <p class="intro" >This is intro class 2 </p>
+    <p class="intro" >This is intro class 3  </p>
+
+    <p id="intro1"></p>
+
+    <div id="abc">
+        <p>Hello its div main </p>
+    </div>
+    <img src="Simranchauhan.jpg" alt="simran" id="image">
+    <p id="value1"></p>
+    <p id="value2"></p>
+    <script>
+        var x = document.getElementsByClassName("intro")
+        document.getElementById("intro1").innerHTML ="output by class function : " + x[1].innerHTML;
+
+        var y = document.getElementsByTagName("p");
+        document.getElementById("value1").innerHTML ="output by tag name  : " + y[1].innerHTML;
+        var z = document.getElementById("abc");
+        var b = z.getElementsByTagName("p");
+        document.getElementById("value2").innerHTML ="Id in div and accessing element from div using tag name : " + b[0].innerHTML;
+        document.getElementById("image").src = "Sussan.jpg";
+    </script>
+</body>
+</html>

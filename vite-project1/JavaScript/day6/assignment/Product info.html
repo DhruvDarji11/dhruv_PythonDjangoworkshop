@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product info</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <table class="table table-bordered ">
+      <caption>Product info table</caption>
+      <thead class="">
+        <tr>
+          <th scope="col">ProductID</th>
+          <th scope="col">ProductName</th>
+          <th scope="col">Price</th>
+          <th scope="col">Location</th>
+          <th scope="col"> </th>
+          <th scope="col"></th>
+        </tr>
+        
+      </thead>
+      <tbody id="productValues" class="text-dark">
+        
+      </tbody>
+      
+    </table>
+    <div class=" block border-2 border-solid ">
+       <button type="button" id="cartSummary">Cart Summary</button>
+    </div>
+    <script >
+
+        let myArrayObject = {products :[{"ProductId": 1 ,"Name": "Cheese", "Price" : 2.50, "Location": "Refrigerated foods"},{"ProductId": 2 , "Name": "Crisps", "Price" : 3, "Location": "the Snack isle"},{"ProductId": 3 , "Name": "Pizza", "Price" : 4, "Location": "Refrigerated foods" },{"ProductId": 4 , "Name": "Chocolate", "Price" : 1.50, "Location": "the Snack isle"},{"ProductId": 5 , "Name": "Self-raising flour", "Price" : 1.50, "Location": "Home baking"},{"ProductId": 6 , "Name": "Ground almonds", "Price" : 3, "Location": "Home baking"}]};
+        
+        localStorage.setItem("parsedValue",myArrayObject);
+        let i;
+        var text1 = "";
+        
+        for( i =0 ;i<myArrayObject.products.length; i++ ){
+            text1 += "<tr> <td>" +myArrayObject.products[i].ProductId +"</td><td>" + myArrayObject.products[i].Name + "</td><td>"+ myArrayObject.products[i].Price +"</td><td>"+ myArrayObject.products[i].Location +
+                    "</td><td>"+ "<button type=button class=btn-light onclick=setdata()>ADD to cart</button></td></tr>";
+                }            
+
+        document.getElementById("productValues").innerHTML = text1;
+        
+        function setdata(){
+          var abc = "";
+          abc += abc.append()
+        }
+    </script>
+    
+
+</body>
+</html>

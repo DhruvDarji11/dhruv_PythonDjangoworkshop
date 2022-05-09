@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script>
+        let obj = {"name":"Dhruv",
+        "age":21,
+         "gender":"male" ,
+         "lname":"Darji",
+         "fullname":function(){
+             return this.name+" "+ this.lname;
+         } 
+        };
+        document.getElementById("demo").innerHTML = obj.fullname();
+
+        let s1="My name is Dhruv name";
+        let s2="Hello , How are you";
+        let s3 = s1.includes("name");
+        let s4 = s1.indexOf("name");
+        let s5 = s1.lastIndexOf("name");
+        let s6= s1.indexOf("name",5);
+        let s7 = s1.split(" ");
+        let s8 = s7.join("");
+        let a = Number("10.33");
+        let a1 = parseInt("10.33");
+        let a2 = parseInt("years 10 ");
+        let a3 = Number("10 yearss");
+        let a4 = ["name","division","section","department",65];
+        let a5 = "<ul>";
+        for(let i=0; i <a4.length ;i++){
+            a5 = a5 +"<li>"+ a4[i]+ "</li>";
+        }
+        a5 = a5 +"</ul>";
+        document.getElementById("demo1").innerHTML = s3;
+        document.getElementById("demo2").innerHTML ="index of \"name\" is: "+ s4;
+        document.getElementById("demo3").innerHTML ="lastindex of \"name\" is: "+ s5;
+        document.getElementById("demo4").innerHTML =" using index of \"name\" form position 5 it is scanned is: "+ s6;
+        document.getElementById("demo5").innerHTML ="s1 is splitted is: "+ s7;
+        document.getElementById("demo6").innerHTML ="join on above splitted string :"+ s8;
+        document.getElementById("demo7").innerHTML ="Numbers method: "+ a +" <br>"
+        + a1 +" <br>" + a2 +" <br>"+ a3 +" <br>";
+        document.getElementById("demo8").innerHTML="array :  "+ a4;
+        document.getElementById("demo9").innerHTML="0 th position : "+ a4[0];
+        a4[0]="Dhruv";
+        document.getElementById("demo10").innerHTML=" changed array value at 0 position:"+ a4;
+        document.getElementById("demo11").innerHTML=" Array in list format:"+ a5;
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo12").innerHTML = fruits;
+
+        // First sort the array
+        fruits.sort();
+
+        // Then reverse it:
+        fruits.reverse();
+        document.getElementById("demo13").innerHTML = fruits;
+    </script>
+</body>
+</html>

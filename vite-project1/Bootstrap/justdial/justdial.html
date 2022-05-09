@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDial</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75f81c1e5b.js" crossorigin="anonymous"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body >
+    <button id="button5" type="button" class="btn btn-primary rounded-lg shadow-neutral-900">Free listing</button> <br>
+      <button id="button6" type="button" class="btn btn-primary rounded-lg shadow-lg">Customer care</button>
+    <div class="container px-5" >
+    <nav class="navbar navbar-expand-md p-0 " aria-label="jd navbar">
+        <div class="container bg-light ">
+          <a class="navbar-brand p-0" href="#">
+            <img src="asset/jdlogo.svg" alt="Site Logo" style="width:100px; height: 55px;" > 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="fa fa-sliders"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            
+            <ul class="navbar-nav mt-0 ms-5 px-5">
+                <li class="nav-item px-5 mt-0" id="navcolor">
+                  <a class="nav-link px-5 mt-0" href="https://www.ndtv.com/">What's new</a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item " id="freelisting">
+                <a class="nav-link" href="#">Free listing</a>
+              </li>
+              <li class="nav-item" id="navcolor">
+                <a class="nav-link" href="#">Advertise</a>
+              </li>  
+              <li class="nav-item dropdown " id="navcolor">
+                <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown">English</a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="eng1">Engilsh</a></li>
+                  <li><a class="dropdown-item" href="hin1">हिन्दी</a></li>
+                  <li><a class="dropdown-item" href="guj1">ગુજરાતી</a></li>
+                  <li><a class="dropdown-item" href="#">मराठी</a></li>
+                </ul>
+               </li>
+                <li class="nav-item" id="navcolor">
+                    <a class="btn btn-block" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Login </a>
+                </li>
+                <p class="mt-2"> / </p>
+                <li class="nav-item" id="navcolor">
+                    <a class="btn btn-block" href="#" data-bs-toggle="modal" data-bs-target="#loginmodal" >Signup</a>
+                </li>
+            </ul>
+
+           </div>
+        </div>
+      </nav>
+      <!--SEarch bar section-->
+      <div class="search-bar" >
+          <div class="container"  id="search-bar">
+              <div class="row m-0 p-0">
+                <div class="col-md-3 mx-0 px-0">
+                </div>
+                  <div class="col-md-6 m-0">
+                      <form>
+                        <div>
+                            <div class="input-group">
+                                <div class="input-group-append">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-light text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Ahmedabad
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">Ahmedabad</a>
+                                            <a href="#" class="dropdown-item">Surat</a>
+                                            <a href="#" class="dropdown-item">Baroda</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="search" placeholder="Search for any business,pace or anything" class="form-control">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn h-15 w-30 m-0" id="btn1"> <em class="fa fa-search" style=" color: white; font-size: large;"></em></button>
+                                </div>
+                            </div>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+      <!--1st division for carousel and dropdown -->
+      <div id="sectionone">
+          <div class="container-fluid m-0 p-0">
+              <div class="row ">
+                  <div class="col">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        
+                        
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="asset/Flights.webp" alt="Flights" class="d-block" style="width:100%">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="asset/jdmart-banner.webp" alt="jd banner" class="d-block" style="width:100%">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="asset/logistic-banner-web.webp" alt="logistic banner" class="d-block" style="width:100%">
+                          </div>
+                        </div>
+                        
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    
+      <!--2nd section-->
+      <div >
+      <div class="secondsection" >
+        <div class="container-fluid bg-light m-0 p-0" >
+            <div class="row mx-2 inline-block"  style="background-color: rgb(247, 245, 245);">
+                <div class="col-md-3">
+                    <div class="list-group">
+                            <a href="https://ahmedabadcity.gov.in/portal/COVID19.jsp" class="list-group-item list-group-item-action">Covid-19 Helpline</a>
+                            <a href="#" class="list-group-item list-group-item-action">B2B</a>
+                            <a href="https://www.makemytrip.com/flights/" class="list-group-item list-group-item-action">Air tickets</a>
+                            <a href="#" class="list-group-item list-group-item-action">Anything on Hire</a>
+                            <a href="https://www.bankofbaroda.in/personal-banking/loans" class="list-group-item list-group-item-action">Loans</a>
+                            <a href="https://www.autocare.co.in/" class="list-group-item list-group-item-action">Auto Care</a>
+                            <a href="https://www.mercedes-benz.com/en/" class="list-group-item list-group-item-action">Automobiles</a>
+                            <a href="https://www.youtube.com/watch?v=5bjr7DgN_nk" class="list-group-item list-group-item-action">Baby Care</a>
+                            <a href="https://www.wedmegood.com/vendors/all/wedding-venues/all/banquet-hall/" class="list-group-item list-group-item-action">Banquets</a>
+                            <a href="https://paytm.com/" class="list-group-item list-group-item-action">Bills & Recharge</a>
+                            <a href="https://www.goibibo.com/hotels/hotels-in-ahmedabad-ct/" class="list-group-item list-group-item-action">Book Hotel</a>
+                            <a href="https://www.pepperfry.com/home-services-pest-control.html" class="list-group-item list-group-item-action">Pest control</a>
+                            <a href="https://m.redbus.in/bus-tickets" class="list-group-item list-group-item-action">Bus</a>
+                            <a href="https://www.olacabs.com/" class="list-group-item list-group-item-action">Cabs & Car Rental</a>
+                            <a href="https://www.ecatering.irctc.co.in/" class="list-group-item list-group-item-action">Caterers</a>
+                            <a href="https://www.apollopharmacy.in/" class="list-group-item list-group-item-action">Chemists</a>
+                            <a href="https://www.serviceonwheel.com/ahmedabad/service/civil-work.html" class="list-group-item list-group-item-action">Civil Contractor</a>
+                            <a href="https://www.dhl.com/in-en/home/book-online.html" class="list-group-item list-group-item-action">Courier</a>
+                            <a href="https://www.bigbasket.com/" class="list-group-item list-group-item-action">Daily Needs</a>
+                            <a href="https://gaana.com/playlist/gokulphuyal-zbgxx-onlinemusic" class="list-group-item list-group-item-action">Dance & Music</a>
+                            <a href="https://www.apollo247.com/specialties" class="list-group-item list-group-item-action">Doctor</a>
+                            <a href="https://byjus.com/" class="list-group-item list-group-item-action">Education</a>
+                            <a href="https://ahmedabad.nic.in/helpline/" class="list-group-item list-group-item-action">Emergency</a>
+                            <a href="https://digitaluncovered.com/15-best-event-management-agencies-in-india/" class="list-group-item list-group-item-action">Event Organizer</a>
+                            <a href="https://www.muscleandfitness.com/" class="list-group-item list-group-item-action">Fitness</a>
+                            <a href="https://www.easemytrip.com/flights.html" class="list-group-item list-group-item-action">Flights</a>
+                            <a href="https://www.justdial.com/Travel/Foreign-Exchange" class="list-group-item list-group-item-action">Foreign Exchange</a>
+                            <a href="https://www.justdial.com/Ahmedabad/296/flower_fil" class="list-group-item list-group-item-action">Flower</a>
+                            <a href="https://www.floweraura.com/" class="list-group-item list-group-item-action">Home Decor</a>
+                            <a href="https://www.amazon.in/Home-D%C3%A9cor/b?ie=UTF8&node=1380374031" class="list-group-item list-group-item-action">Home Improvements</a>
+                            <a href="https://en.wikipedia.org/wiki/List_of_hospitals_in_India" class="list-group-item list-group-item-action">Hospitals</a>
+                            <a href="https://www.urbancompany.com/ahmedabad-professional-home-cleaning" class="list-group-item list-group-item-action">House Keeping</a>
+                            <a href="#" class="list-group-item list-group-item-action">Industrial Products</a>
+                            <a href="https://www.policybazaar.com/" class="list-group-item list-group-item-action">Insurance</a>
+                            <a href="https://www.livspace.com/in/hire-a-designer" class="list-group-item list-group-item-action">Interior Designer</a>
+                            <a href="https://www.worldsim.com/international-sim-card?___store=india" class="list-group-item list-group-item-action">International Sim card</a>
+                            <a href="https://www.google.co.in/" class="list-group-item list-group-item-action">Internet</a>
+                            <a href="https://www.naukri.com/" class="list-group-item list-group-item-action">Jobs</a>
+                            <a href="https://www.tanishq.co.in/" class="list-group-item list-group-item-action">jewellery</a>
+                            <a href="https://www.maxlab.co.in/" class="list-group-item list-group-item-action">Labs</a>
+                            <a href="https://www.edx.org/learn/language#:~:text=EdX%20offers%20free%20online%20language,help%20you%20on%20your%20way." class="list-group-item list-group-item-action">Language classes</a>
+                            <a href="https://www.sbicard.com/en/personal/benefits/encash.page" class="list-group-item list-group-item-action">Loan & Credit card</a>
+                            <a href="https://www.apollopharmacy.in/" class="list-group-item list-group-item-action">Medical</a>
+                            <a href="https://www.godrejinterio.com/online-furniture-kitchen" class="list-group-item list-group-item-action">Modular kitchen</a>
+                            <a href="#" class="list-group-item list-group-item-action">On demand service</a>
+                            <a href="https://www.housejoy.in/movers-packers-services" class="list-group-item list-group-item-action">Packers and movers</a>
+                            <a href="https://www.partycentersoftware.com/features/online-party-booking/" class="list-group-item list-group-item-action">Party</a>
+                            <a href="https://www.bigbasket.com/cl/beauty-hygiene/" class="list-group-item list-group-item-action">Personal care</a>
+                            <a href="https://www.amazon.in/Books/b?ie=UTF8&node=976389031" class="list-group-item list-group-item-action">Books</a>
+                            <a href="https://www.petbacker.com/d/india" class="list-group-item list-group-item-action">pet and pet care</a>
+                            <a href="https://www.justdial.com/Ahmedabad/Kindergartens/nct-10286876" class="list-group-item list-group-item-action">Play school</a>
+                            <a href="https://www.99acres.com/" class="list-group-item list-group-item-action">real Estste</a>
+                            <a href="https://www.cashify.in/repair" class="list-group-item list-group-item-action">Repairs</a>
+                            <a href="http://www.tablegrabber.com/" class="list-group-item list-group-item-action">Restaurants</a>
+                            <a href="https://www.flipkart.com/" class="list-group-item list-group-item-action">Shop online</a>
+                            <a href="https://cissindia.co.in/" class="list-group-item list-group-item-action">Security Services</a>
+                            <a href="https://www.flipkart.com/" class="list-group-item list-group-item-action">Shopping</a>
+                            <a href="https://thecoachcrew.com/" class="list-group-item list-group-item-action">Sports Coach</a>
+                            <a href="https://www.khelmart.com/" class="list-group-item list-group-item-action">sports Goods</a>
+                            <a href="https://www.irctc.co.in/" class="list-group-item list-group-item-action">Train</a>
+                            <a href="https://www.coursera.org/courses?query=india" class="list-group-item list-group-item-action">Training institute</a>
+                            <a href="https://truckguru.co.in/" class="list-group-item list-group-item-action">Transporters</a>
+                            <a href="https://www.makemytrip.com/" class="list-group-item list-group-item-action">Travel</a>
+                            <a href="https://www.wedmegood.com/vendors/all/planners/" class="list-group-item list-group-item-action">Wedding</a>
+    
+                          </div>
+                      </div>
+                
+                <div class="col-md-9 pl-5" >
+                    <h6 class="lead mx-5 my-3">Popular Services</h6>
+                    <div class="row mx-5 " >
+                        <div class="col-lg-6 " id="main1">
+                            <div class="d-flex p-0 m-0 rounded" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 " style="width: 155px; height: 160px; background-color: rgb(239, 255, 241);" >
+                                        <strong>RESTAURANTS</strong>
+                                        <a href="https://www.zomato.com/" >Order online</a> <br>
+                                        <a href="http://www.tablegrabber.com/">Book table</a> <br>
+                                        <a href="https://www.google.co.in/" >Trending</a><br>
+                                        <a href="https://www.google.co.in/">more</a>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/restaurant.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3 " id="main1">
+                            <div class="d-flex p-0" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 155px; height: 160px; background-color: rgb(239, 255, 241);" >
+                                        <strong>SHOP ONLINE</strong>
+                                        <a href="https://www.amazon.in/mobile-phones/b?ie=UTF8&node=1389401031">Mobiles</a> <br>
+                                        <a href="#">Televisions</a> <br>
+                                        <a href="#" >Air conditioner</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/mobileshoping.webp" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0" id="editbox">                                
+                                <div>
+                                    <img src="asset/dailygrocery.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 160px; background-color: rgb(239, 255, 241);" >
+                                        <strong>DAILY NEED</strong>
+                                        <a href="#" >Groceries</a> <br>
+                                        <a href="#">Chemists</a> <br>
+                                        <a href="#" >Bakery</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/Doctors.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 160px; background-color: rgb(239, 255, 241);" >
+                                        <strong>DOCTORS</strong>
+                                        <a href="#" >Dentists</a> <br>
+                                        <a href="#">Dermatologists</a> <br>
+                                        <a href="#" >ENT</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <!--2nd part-->        
+
+                    <h6 class="lead mx-5 my-3">Whats Trending?</h6>
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0 m-0" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>TRAVEL</strong> <br>
+                                        <a href="#" >Flights</a> <br>
+                                        <a href="#">Bus</a> <br>
+                                        <a href="#" >Hotels</a><br>
+                                        <a href="#">Car Rentals</a> <br>
+                                        <a href="#">Trains</a>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/travel5.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>REPAIRS</strong> <br>
+                                        <a href="#" >AC</a> <br>
+                                        <a href="#">Laptops</a> <br>
+                                        <a href="#" >moblie phones</a><br>
+                                        <a href="#">Washing machine</a> <br>
+                                        <a href="#">more..</a>  
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/repairs6.webp" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/loans7.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>LOANS</strong> <br>
+                                        <a href="#" >Credit cards</a> <br>
+                                        <a href="#">Home loans</a> <br>
+                                        <a href="#" >Personal loans</a><br>
+                                        <a href="#">Car loans</a> <br>
+                                        <a href="#">more</a> 
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/automobile8.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>Automobiles</strong> <br>
+                                        <a href="#" >New cars</a> <br>
+                                        <a href="#">Used cars</a> <br>
+                                        <a href="#" >Car insurance </a><br>
+                                        <a href="#">Driving schools</a> <br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--3rd part-->
+
+                    <h6 class="lead mx-5 my-3">Business & Services</h6>
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0 m-0" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>ON DEMAND SERVICES</strong>
+                                        <a href="#" >Carpenters</a> <br>
+                                        <a href="#">Electricians</a> <br>
+                                        <a href="#" >Plumbers</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/ondemand9.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>WEDDING</strong>
+                                        <a href="#" >Banquet Halls</a> <br>
+                                        <a href="#">Bridal Requisites</a> <br>
+                                        <a href="#" >Caterers</a><br>
+                                        <a href="#">Jewellery</a>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <img src="asset/wedding10.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/jobs11.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>JOBS</strong> <br>
+                                        <a href="#" >Placements Services</a> <br>
+                                        <a href="#">Search Jobs</a> <br>
+                                        <a href="#" >Overseas Jobs</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/personal_care12.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>PERSONAL CARE</strong>
+                                        <a href="#" >Beauty parlours</a> <br>
+                                        <a href="#">Spas</a> <br>
+                                        <a href="#" >Salon</a><br>
+                                        <a href="#">Beauty Services</a>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row  mx-5">
+                        <div class="col-lg-6 mb-3" >
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/real_estate13.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>REAL Estate</strong> <br>
+                                        <a href="#" >Buy</a> <br>
+                                        <a href="#">Sell</a> <br>
+                                        <a href="#" >Residental Rental</a><br>
+                                        <a href="#">PG Accommodations</a>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-flex p-0" id="editbox">
+                                
+                                <div>
+                                    <img src="asset/flower14.jpg" style="height: auto; width: auto;" alt="restaurant">
+                                </div>
+                                    
+                                <div id="a2">
+                                    <ul class="d-block pt-3 pb-5" style="width: 164px; height: 194px; background-color: rgb(239, 255, 241);" >
+                                        <strong>FLOWERS</strong>
+                                        <a href="#" >FLORISTS</a> <br>
+                                        <a href="#">Flower shops</a> <br>
+                                        <a href="#" >24 hour Florists</a><br>
+                                        <a href="#">more</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <!--Next section-->
+                    
+                    <div class="row rounded mx-4 ">
+                        <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3  bg-white">
+                            <div class="card mx-2 " style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/mobile.jfif" alt="mobile image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">Mobile Phones</h4>
+                                  <a href="#" class="text-muted">Shop now<em class="fa fa-caret-right"></em></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3 bg-white">
+                            <div class="card mx-2" style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/tv.jfif" alt="tv image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">TV Sets</h4>
+                                  <a href="#" class="text-muted">Shop now<em class="fa fa-caret-right"></em></a>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3 bg-white">
+                           <div class="card mx-2" style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/camera.jfif" alt="camera image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">Digital Camera</h4>
+                                  <a href="#" class="text-muted">Shop now <em class="fa fa-caret-right"></em></a>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3 bg-white">     
+                            <div class="card mx-2 p-2" style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/Ac.jfif" alt="mobile image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">Ac</h4>
+                                  <a href="#" class="text-muted">Shop now<em class="fa fa-caret-right"></em></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3 bg-white">
+                            <div class="card mx-2" style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/refrigerator.jfif" alt="tv image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">Refrigerator</h4>
+                                  <a href="#" class="text-muted">Shop now<em class="fa fa-caret-right"></em></a>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 rounded  p-3 bg-white">
+                            <div class="card mx-2" style="width:200px">
+                                <img class="card-img-top" style="height: 120px;" src="asset/tablet.jfif" alt="camera image">
+                                <div class="card-body text-center">
+                                  <h4 class="Display-6 card-title">Tablets</h4>
+                                  <a href="#" class="text-muted">Shop now <em class="fa fa-caret-right"></em></a>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+            <!--last div-->
+            
+                    <div class="row m-5 ">
+                        <div class="col rounded text-center text-white p-5 " id="lastdiv1">
+                            <div class="d-none d-lg-block">
+                            <h3 class="mx-5 px-5">Be a part of out Family & get everything in your pocket</h3>
+                            
+
+                            <div class="input-group mx-5 px-5 input-group-lg">
+                                <input type="text" class="form-contol px-5" placeholder="Enter Phone Number">
+                                <button class="btn " style="background-color: orangered; ">Get app</button>
+
+                            </div>
+                        </div>
+                        <p style="font-size: large;">Download the Justdial App</p>
+                            <button class="btn btn-dark m-5 p-0" style="color:white; font-size: larger;"><em class="fa fa-apple" style="font-size:xx-large;"></em><small>Apple store</small></button>
+                            <button class="btn btn-dark m-5 p-0" style="color:white; font-size: large;"><em class="fa-brands fa-google-play" style="font-size:xx-large;"></em> Play store</button>
+                        </div>
+
+                    </div>    
+                    
+
+                    <ul>
+                        <a href="#" style="padding-right: 30px;">About</a>  
+                        <a href="#" style="padding-right: 30px;">Investor Relation </a> 
+                        <a href="#" style="padding-right: 30px;">We are hiring </a> 
+                        <a href="#" style="padding-right: 30px;">Customer care </a> 
+                        <a href="#" style="padding-right: 30px;">Advertising </a> 
+                        <a href="#" style="padding-right: 30px;">Free listing</a>  
+                        <a href="#" style="padding-right: 30px;">Media </a> 
+                        <a href="#" style="padding-right: 30px;">Business Badge</a> 
+                        <a href="#" style="padding-right: 30px;">Feedback</a> 
+                        <a href="#" style="padding-right: 30px;">Queries</a> 
+                    </ul>
+
+                    <p style="font-size:x-small ; padding-left: 10px; margin-left: 20px;">Meals on Train / Order Flowers/ Order Food Online/ Book a table/ Shop Online/ Order Books/ Movies/ Entertainment/ Grocery Shopping/ Chemists/ Laundry Pick Up/ Courier Pick Up/ Doctors/ Bills & Recharge/ Insurance/ AC Repair/ Flights/ Bus/ Train/ Hotels/ International Sim/ Cab & Car Rental/ Spa & Salon/ Car service/ Water Purifier Service/ Hospitals/ Lab Test/ Jobs/ Automobile/ On Demand Service/ JD Social Blog</p>
+
+                    <p style="font-size: x-small; padding-left: 10px; margin-left: 20px;">Ahmedabad/ Bangalore/ Chandigarh/ Chennai/ Coimbatore/ Delhi-NCR / Ernakulam / Goa / Hyderabad / Indore/Jaipur/Kolkata / Mumbai/Mysore/ Nagpur/ Nashik/Pune/ Surat/ Vadodara/ Vizag/ Latest Reviews</p>
+
+                    <p style="font-size: x-small; padding-left: 10px; margin-left: 20px;">Resorts/ Cake Delivery Services/ Skoda Car Dealers/ Volkswagen Car Dealers/ Orthopaedic Surgeons/ Paying Guest Accommodations/ Yoga Classes/ Lounge Bars/ Endocrinologists/ Fashion Designers/ Boutiques/ Photographers/ Urologist/ Bike on rent/ GRE Tutorials/ GMAT tutorials/ Criminal lawyers/ Hotels/ Ford Car Dealers/ Broadband Internet Service Providers/ Indian Restaurants/ North Indian Restaurants/ Punjabi Restaurants/ Acting Classes/ Tandoori Restaurants/ General Physician/ Interior Designers/ Bajaj Motorcycle Dealers/ Nissan Car Dealers/ Cosmetic Surgeon/ Broadband Service/Buffet Restaurants/ Italian Restaurants/Restaurants/ Car Repair & Service/ Chinese Restaurants/Dermatologists/ Car Hire/Audi Car Dealers/ Packers and Movers/Yamaha Motorcycle Dealers/ Hotel Management/Bridal Wear Retailers/ Tiffin Services/Second Hand Car Dealers/ Wedding Hall/Gynaecologist/ Chevrolet Car Dealers/Banquet Halls/ Hair Stylists/Home Loans/ SAP Training Institutes/Dentists/ ENT Doctors/AC Repair & Services/ Caterers/Courier Services/ Event Management Companies/Electricians/ Plumbers</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+
+    <footer class="container px-4  text-muted">
+        <div class="row mx-4" style="background-color: rgb(221, 221, 221);">
+            <p style="font-size: small ; padding-left: 30px; padding-top: 15px; padding-bottom: 0px;">Welcome to Justdial, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, 8888888888 and the fact that we own a strong hold on local business information pan India.</p>
+            <p style="font-size: small ; padding-left: 30px; ">Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness, Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other smaller cities across the country too.</p>
+            <p style="font-size: small ; padding-left: 30px;">Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that you are offered the best bargains in the market</p>
+            
+            <p style="font-size: small ; padding-left: 30px;"><strong >Some of our services that will prove useful to you on a day-to-day basis are:</strong></p>
+        
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-cart-shopping" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Shop online</strong>
+                    <p style="font-size: small ;">This online shopping feature brings forth a plethora of gadgets like phones, refrigerators, washing machines, cameras, etc. for you to choose from and make a smart buy.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-book" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Order books</strong>
+                    <p style="font-size: small ;">Ranging from fantasy to fiction, psychology, tutorials and autobiographies, you can choose the genre of your preference and order the book you like with this service.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-cart-shopping" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Order Flower</strong>
+                    <p style="font-size: small ;">In celebration of special days and religious occasions, this service let's you order not only flowers but gourmet gifts and other gift hampers for any and every occasion.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row2-->
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 col-sm-12 px-2 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-hotel" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Hotel booking</strong>
+                    <p style="font-size: small ;">Accompanied by business information, an address, a contact number and a visual reference, you are at leverage to make online reservations at the hotel of your choosing as you plan a trip to another city.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa fa-solid fa-film" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Movies</strong>
+                    <p style="font-size: small ;">This gives you access to book tickets and keep updated with the latest movies. With the provision of a synopsis, cast, crew and trailer, you can make a better choice in the movie you would like to watch.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-masks-theater" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Entertainment & Events</strong>
+                    <p style="font-size: small ;">Through Justdial's Entertainment and Events you can find the latest and upcoming happenings in the city, ranging from music shows, theater acts, stand up comedy, art exhibitions, etc. and book tickets for the same.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row3-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-bread-slice" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Order Groceries</strong>
+                    <p style="font-size: small ;">Keeping up with time and the tightening schedules of working individuals in the country, 'Order Groceries' gives one the freedom to skip the tiresome grocery shopping and have it delivered instead.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-pills" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Order Medicines</strong>
+                    <p style="font-size: small ;">
+                        Order MedicinesFrom finding your neighbourhood chemist to those that are opened round the clock, this service let's you place an order for your required medication with the nearest chemist and have it delivered to your doorstep.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-train" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Train Booking</strong>
+                    <p style="font-size: small ;">With us you can explore the ends of the country by means of our 'Book Train Ticket' service. So business or family travelers, wanderers and explorers, a ticket to your next destination awaits you.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row4-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-hotel" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Book a Table</strong>
+                    <p style="font-size: small ;">Book a Table with Justdial- the quickest way to make table reservations online. You can also pre-order your food from the best restaurants around you. Book a Table service makes your dine-out experience pleasant and hassle-free.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-mobile" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Online Recharge/Bill Payment</strong>
+                    <p style="font-size: small ;">With the help of this service you can stay on track in making your bill payments and recharges without having to wait in a queue. This includes bill payments for gas, electricity, data card, DTH, landline, etc.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-bus" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Bus Booking</strong>
+                    <p style="font-size: small ;">With the assistance of our Bus Booking service, you can filter the type of bus you are looking for and make a desired reservation. This service brings to you buses that travel to various destinations across the country.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row5-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-hotel" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Order Food Online</strong>
+                    <p style="font-size: small ;">You are just three clicks away from placing an order and exploring a wide range of exotic cuisines. Order food online with Justdial and get your favourite food delivered at your doorstep. Search for restaurants, view reviews and ratings, avail discounts and order your food.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-car" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Automobile</strong>
+                    <p style="font-size: small ;">Explore the best set of wheels out there and book a test drive with Justdial to make a wise decision when you buy a luxurious car. Get the 'Best Deals' on the most comfortable as well as high-end, premier brands and 'Shop Online' for car accessories. Your dream car awaits you.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-sim-card" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>International Sim Cards</strong>
+                    <p style="font-size: small ;">Stay in touch with your loved ones even when you are traveling internationally. Browse from a range of International SIM card plans as per your need and budget. You can 'Buy a Global SIM' and also find the 'Best Deal' on SIM cards on Justdial.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row6-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-cab" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Cab Booking</strong>
+                    <p style="font-size: small ;">When faced with local transport problems or comfort, this service gives you the opportunity to find the nearest cabs in your area.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-film" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Movies Online</strong>
+                    <p style="font-size: small ;">Find and Watch Online Streaming Movies and TV shows .</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-spa" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Spa & Salon</strong>
+                    <p style="font-size: small ;">Skip the wait to get pampered at a spa or a salon. In a few clicks, 'Book an Appointment' online through Justdial before your next visit.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row7-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-user" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Jobs</strong>
+                    <p style="font-size: small ;">Providing pertinent jobs to job seekers and relevant profiles to employers, this service will help you reach out to employers and vice-versa across industry verticals, experience levels and geographies.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-plane" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Flight Booking</strong>
+                    <p style="font-size: small ;">By way of flight bookings, one can make flight reservations, to your chosen destination - be it business, leisure or 'home for the weekend'. Find affordable tickets here.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-users" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>On Deemand Service</strong>
+                    <p style="font-size: small ;">Find the 'Best Deal', be it for repairing your air-conditioner, getting your car serviced or cleaning your water purifier and drive your utility problems away.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!--row8-->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-hospital" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Insurance</strong>
+                    <p style="font-size: small ;">With the help of 'Insurance' you can make insurance payments, without having to depend on insurance agents.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-stethoscope" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Doctor Appointment</strong>
+                    <p style="font-size: small ;">Find the suitable medical specialist to take care of your health and well-being. Healthcare made easy.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                <div class="d-flex flex-row">
+                <div class="p-3 align-self-start">
+                    <em class="fa-solid fa-dollar" style="font-size: 50px;"></em>
+                </div>
+                <div class="p-3 align-self-end">
+                    <strong>Foreign Exchange</strong>
+                    <p style="font-size: small ;">Do not let Forex related issues add to your woes while traveling to foreign shores. Our 'Buy Forex Online' service has got your back.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <p style="font-size: small ; padding-left: 30px; padding-top: 15px; padding-bottom: 0px;">Some of the other services that can be of assistance to you for leisure, health and home convenience are - Courier Service, Laundry Service, AC Repair, Thyrocare, Metropolis, Order Mineral Water, Book a Table, Doctor's Appointment, Order Food Online, etc.</p>
+        <p style="font-size: small ; padding-left: 30px; ">With an endless number of things under the sun, you can be sure this will be your 'One Stop Shop' to find everything and more.</p>
+        <p style="font-size: small ; padding-left: 30px; ">Copyrights 2008-22. All Rights Reserved. Privacy | Terms | Infringement View Just Dial on Smartphone| Mobile</p>
+        </div>
+    </footer>
+    
+
+    <!--log in and sign up modal-->
+
+
+    <div class="modal fade" id="loginmodal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header text-center bg-light text-dark">
+                <img src="asset/jdlogo.svg" alt="jd logo" style=" height: 75px; width: 100px;">
+              <h5 class="modal-title">Log-in / sign-up </h5>
+              <button class="close" data-bs-dismiss="modal"> <em class="fa fa-times"></em></button>
+    
+            </div>
+            <div class="modal-body">
+              <form >
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control"> <br>
+                </div>
+    
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="text" class="form-control"> <br>
+                </div>
+    
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control"> <br>
+                </div>
+    
+              </form>
+              </div>
+    
+              <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-light text-dark" data-bs-dismiss="modal">Submit</button>
+              </div>  
+          </div>
+        </div>
+      </div>
+
+      
+</body>
+</html>

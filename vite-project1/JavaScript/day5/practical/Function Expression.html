@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <p>Enter Radius of circle</p> <br>
+    <input type="text" name="radius" id="demo"> <br> <br>
+    <button type="button" onclick="myfun()">Submit</button> <br> <br>
+    <p id="demo1"></p>
+    <script>
+        function myfun(){
+        const pi =3.14;
+        var r = document.getElementById("demo").value;
+        
+        const z = function (r) { return pi *r * r} ;
+        const x = z(r);
+        const y = x.toFixed(2);
+        document.getElementById("demo1").innerHTML =" Area of circle pi r^2 : " + y;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Call</title>
+</head>
+<body>
+    <p>This is program using call() function on object </p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            "employee" : function() {
+                return "Name : " + this.name +" <br>Address : \n"+ this.address +" <br>Designation : \n"+ this.designation;
+            
+            }
+        }
+
+        const employee1 ={
+            name : "Dhruv Darji" ,
+            address : "Maninagar" ,
+            designation : "Js Trainee"
+        } 
+
+        const employee2 = {
+            name : "Raj Babbar",
+            address : "Mumbai",
+            designation : "Web Designer"
+        }
+
+
+        document.getElementById("demo").innerHTML = person.employee.call(employee1);
+        document.getElementById("demo1").innerHTML = person.employee.call(employee2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p>Function Elements: </p>
+    <p id="demo3"></p>
+    <p>Function Constructor for "a + b " </p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p> 
+    <p id="demo7"></p> 
+
+    <script>
+        var x = myfun(5,6);
+        document.getElementById("demo2").innerHTML = x;
+        var y = function (c , d) { return c * d};
+
+        const myfun2 = new Function("a","b" ,"return a + b")
+        var z = myfun2(3,4);
+        document.getElementById("demo4").innerHTML = " \"a + b\" using Constructor : " +z; 
+    
+        //document.getElementById("").innerHTML = b;
+        document.getElementById("demo3").innerHTML = y(5,10);
+        function myfun(a,b){
+            document.getElementById("demo").innerHTML = a;
+            document.getElementById("demo1").innerHTML = b;
+            return a * b;
+        }
+
+        // function Hoisting
+        var ab = myfun10(10,20);
+        document.getElementById("demo5").innerHTML = ab;
+        function myfun10(e,f){
+            return e + f;
+        }
+
+        //Self invoking Function:
+
+        (function () {
+            document.getElementById("demo6").innerHTML = "This is self invoking function";
+        })();
+
+        // ES6 method
+        const i = (h,j) => {return h+ j};
+        document.getElementById("demo7").innerHTML = i(20,30);
+        
+    </script>
+</body>
+</html>

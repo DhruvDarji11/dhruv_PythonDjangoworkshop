@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window location</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo5" onclick="myfun()"> click here to go to radix tutorial login page</p>
+    <button type="button" onclick="goback()">back</button>
+        <button type="button" onclick="goforward()">next</button>
+        
+    <script>
+        document.getElementById("demo").innerHTML = "windows location is  :  "+ window.location.href;
+        document.getElementById("demo1").innerHTML = "windows hostname location is  :  "+ window.location.hostname;
+        document.getElementById("demo2").innerHTML = "windows host location is  :  "+ window.location.host;
+        document.getElementById("demo3").innerHTML = "windows pathname is  :  "+ window.location.pathname;
+        document.getElementById("demo4").innerHTML = "windows port location is  :  "+ window.location.port;
+        document.getElementById("demo5").innerHTML = "windows location protocol is  :  "+ window.location.protocol;
+        
+        function myfun(){
+            window.location.assign("https://tutorial.dev.radixweb.net/");
+        }
+
+        function goback(){
+            window.history.back();
+        }
+
+        function goforward(){
+            window.history.forward();
+        }
+    </script>
+</body>
+</html>

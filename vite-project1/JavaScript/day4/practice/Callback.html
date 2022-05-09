@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        
+        function display2(bcd){
+            document.getElementById("demo1").innerHTML = "Square of no : callback method without return: " + bcd; 
+        }
+
+        function square(c){
+            var y = c * c;
+            display2(y);
+        }
+        square(5);
+    </script>
+</body>
+</html>

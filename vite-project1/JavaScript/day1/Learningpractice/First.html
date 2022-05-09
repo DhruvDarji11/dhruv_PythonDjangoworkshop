@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+</head>
+<body>
+    <p id="demo">This is demo Changes will occur here</p>
+    
+        <button type="button" onclick="document.getElementById('demo').innerHTML='Introduction'">Button</button>
+    <br>
+    <p>New section</p>
+    <button type="button" onclick="document.getElementById('image1').src='helmet.jpg'"> HELMET</button> 
+
+    <img src="helmet.jpg" id="image1" alt="helmet image">
+
+    <button type="button"  onclick="document.getElementById('image1').src='mountains.jpg'">Mountains</button>
+
+    <br> <br>
+
+    <p id="demo2">Hello Javascript</p>
+    <button type="button" onclick="abc()">Function eg</button>
+    
+    <h2 id="demo3"></h2>
+    <script>
+        function abc(){
+        document.getElementById('demo2').style.fontSize = '20px';
+        
+        }
+
+    alert('hello!!!')    
+
+    document.getElementById('demo3').innerHTML='Heading tag in script'
+    </script>
+
+
+    <p></p> 
+</body>
+</html>

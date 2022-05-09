@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pliting string and converting to array</title>
+</head>
+<body>
+    <p>Here string is given in input and converted to array . </p>
+    <h2>The 2nd word of string will be displayed in output.</h2>
+    <label for="arrayip">Enter string:</label>
+    <input type="text" name="arrayip" value="Hello this is an Example!" id="demo"> <br>
+    <button type="button" onclick="myfun()">Submit</button>
+    <p id="demo2"></p>
+
+    <script>
+        function myfun(){
+            let x = document.getElementById("demo").value;
+            const arr = x.split(" ");
+            document.getElementById("demo2").innerHTML = arr[1];
+        }
+        
+    </script>
+</body>
+</html>

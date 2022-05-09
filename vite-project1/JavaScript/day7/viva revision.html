@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+
+    const base = document.getElementById("demo");
+    const base1 = document.getElementById("demo1");
+
+    const name = "Dhruv";
+    const lname = "Darji";
+    const company = "Radix";
+    const RandomObj = {name:"Raj Babbar" , 
+            position:"Web developer ", 
+            experience:" 10 years" ,
+            technologies : ["java" , "python", "c#"]}; 
+    const op = `this is bio data name:  ${name}  last name : ${lname}  company : ${company.toLowerCase() }`;
+    base.innerHTML = op;
+    
+    const output2 = `
+    <h3>This is Templale string Example</h3>
+    ${RandomObj.name} is  ${RandomObj.position}
+    <ul>${RandomObj.technologies.map(function(item) {
+        return `<li> ${item} </li>`;
+    }).join("")
+
+    }
+        
+    </ul>
+
+    `;
+base1.innerHTML = output2;
+    console.log(op);
+    console.log(output2);
+</script>
+</body>
+</html>

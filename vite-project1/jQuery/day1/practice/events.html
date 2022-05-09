@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").css("background-color","yellow");
+            $("span").click(function(){
+                $(this).hide();
+            });
+            $("h3").dblclick(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Hello </p> <br>
+    <p>hello </p>
+    <span>Hello world. this is span click to hide.</span>
+    <h3>this is h3 double click it to make it hide.</h3>
+    <p id="p2">This is para </p>
+</body>
+</html>

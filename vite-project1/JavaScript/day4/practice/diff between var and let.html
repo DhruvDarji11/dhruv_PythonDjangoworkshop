@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var and let</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo6"></p> 
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo7"></p>
+    <script>
+        var a = 5;
+        let b = 6;
+        document.getElementById("demo").innerHTML = "variable a value  : " + a;
+        document.getElementById("demo1").innerHTML = "let b value : " + b;
+        {
+
+           var a = 7;
+           let b = 7;
+        document.getElementById("demo6").innerHTML = "inside block values of a and b are changed <br>";
+        document.getElementById("demo2").innerHTML = "variable a value cahanging request : " + a;
+        document.getElementById("demo3").innerHTML = "let b value in function: " + b;
+        }
+        document.getElementById("demo4").innerHTML = "outside :  variable a remains as it is i.e 7 but (let) lets us change the value inside block ";
+        document.getElementById("demo5").innerHTML = "variable a value outside function : " + a;
+        document.getElementById("demo7").innerHTML = "let b value outside function: " + b;
+        
+
+    </script>
+</body>
+</html>

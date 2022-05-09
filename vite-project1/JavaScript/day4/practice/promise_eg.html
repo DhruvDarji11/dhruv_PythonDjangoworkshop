@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <form method="get">
+        <input type="text" id="demo">
+        <button type="button" onclick="myfun()">Check</button>
+        <p id="demo1"></p>
+    </form>
+
+    <script>
+        function myfun(){
+        var x = document.getElementById("demo").value;
+        function display1(xyz){
+            
+            document.getElementById("demo1").innerHTML = xyz;
+        }
+
+        let d = new Promise(function(myResolve,myReject){
+            
+            var y= /\d/;
+            var z = y.test(x);
+            
+            if(z != true){
+                setTimeout(function() { myResolve(s);}, 500); 
+                 const ab= x.length - 1;
+                 const s = [];
+                for(let i = ab ; i>=0 ; i--){
+                    s.push(x[i]);
+                }
+
+                return s.join("");
+            }
+            if( z == true ){
+                setTimeout(function() {myReject("Not a string");}, 500);
+                
+            }
+        });
+
+        d.then(function(value) {display1(value);} , function(error) {display1(error);} );
+        
+    }
+
+        
+    </script>
+</body>
+</html>

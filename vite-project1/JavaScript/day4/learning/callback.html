@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        function display1(abc) {
+            document.getElementById("demo1").innerHTML ="Addition of 2 nos is : callback method with return:" + abc ;
+        }
+        function Calculate1(a,b){
+            var z = a + b;
+            return z;
+        }
+
+        function display2(bcd){
+            document.getElementById("demo2").innerHTML = "Addition of 2 nos : callback method without return: " + bcd; 
+        }
+
+        function calculate2(c,d){
+
+            var y = c+d;
+            display2(y);
+        }
+
+        function display3(cde){
+            document.getElementById("demo3").innerHTML = "Addition of 2 nos using callback like add(a,b,callback) :" + cde;
+        }
+
+        function calculate3(e,f,callback3){
+            var w = e + f;
+            callback3(w);
+        }
+        let x = Calculate1(5,6);
+        display1(x);
+
+
+        calculate2(5,11);
+
+
+        calculate3(10,12,display3);
+    </script>
+</body>
+</html>

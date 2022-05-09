@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var options = $('#nationName option');
+
+            var values = $.map(options ,function(option) {
+                return option.value;
+            });
+
+            
+            $("#nationName").click(function(){
+                $("#output1").hide();                
+            });
+            $('#nationName').on('change', function(){
+                
+                var country1 =$('#nationName option:selected').text();
+                $('#output2').text("You have selected :" +country1).css({"font-size":"25px"});
+            });
+        });
+    </script>
+</head>
+<body>
+    
+        <p style="font-size: larger;">Select country</p>
+        <select name="natio" id="nationName" style="margin-left: 100px; font-size: larger;">
+            <option value="default" id="default" selected>Please Select </option>
+            <option value="India" id="india">India</option>
+            <option value="UK" id="UK">United Kingdom</option>
+            <option value="USA" id="USA">USA</option>
+            <option value="Australia" id="Australia">Australia</option>
+            <option value="Japan" id="Japan">Japan</option>
+        </select>
+
+    <p id="output1"></p>  
+    <p id="output2"></p>
+</body>
+</html>

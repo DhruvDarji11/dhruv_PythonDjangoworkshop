@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Example</title>
+</head>
+<body>
+    <p></p>
+    <p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+function myFunction() {
+    var sum = 0;
+  let x = prompt("Please enter 1st number", 2);
+  if (x >= 0) {
+    document.getElementById("demo").innerHTML = x ;
+  }
+  
+  let y = prompt("Please enter 2nd number", 3);
+  if (y >= 0) {
+    document.getElementById("demo1").innerHTML = y;
+  }
+  
+  let z = prompt("Please enter 3rd number", 4);
+  if (z >= 0) {
+    document.getElementById("demo2").innerHTML = z;
+  }
+  
+  var abc = Math.max(x,y,z);
+  document.getElementById("demo4").innerHTML ="max no is" + abc;
+  
+   
+   
+   if(x > 40){
+       sum += parseInt(x) ;
+   }
+   
+   if(y>40){
+       sum += parseInt(y);
+   }
+
+   if(z>40){
+       sum += parseInt(z);
+   }
+   
+   document.getElementById("demo5").innerHTML = "sum of numbers greater than 40 is"+ sum;
+  
+}
+
+</script>
+</body>
+</html>

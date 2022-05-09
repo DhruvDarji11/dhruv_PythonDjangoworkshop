@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details form</title>
+</head>
+<body>
+    <form  method="get">
+        <label for="id">EmployeeID:</label>
+        <input type="text" id="EmployeeID" required> <br><br>
+        <label for="name">Employee Name:</label>
+        <input type="text" id="EmployeeName"  required> <br><br>
+        <label for="Age">Age:</label>
+        <input type="text" id="age" required> <br><br>
+        <label for="gender">Gender</label> <br><br>
+        <input type="radio" name="gender" value="Male"> Male <br>
+        <input type="radio" name="gender" value="Female"> Female <br>
+        <input type="radio" name="gender" value="Other">Other <br><br>
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" required> <br><br>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" required> <br><br>
+        <label for="location">Location:</label>
+        <select name="location" id="location">
+            <option value="abad" >Ahmedabad</option>
+            <option value="baroda">Baroda</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Singapore">Singapore</option>
+            <option value="us">USA</option>
+        </select> <br> <br>
+        <label for="mail">Email:</label>
+        <input type="text" id="mail" required> <br><br>
+        <label for="doj">Date of Joining:</label>
+        <input type="text" id="demo2" required> <br><br>
+        <label for="contact number">contact number:</label>
+        <input type="text" id="contactnumber" required>
+        <button type="button" onclick=" myfun()">Submit</button>
+        <p id="demo"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo3"></p>
+        <p id="demo1" ></p>
+        <p id="demo8"></p>
+        
+
+    </form>
+
+    <script>
+        function myfun(){
+           var x = document.getElementById("EmployeeID").value;
+           var pat = /\d\d\d\d\d/;
+           var pat1 = /\d\d-\d\d-\d\d\d\d/;
+           var pat2 = /\d/;
+           var dt = document.getElementById("demo2").value;
+           var x1 = document.getElementById("EmployeeName").value;
+           var x2 = document.getElementById("age").value;
+           x2 = x2.toString(10);
+           var x3 = document.getElementById("designation").value;
+           var x4 = document.getElementById("salary").value;
+           var x5 = document.getElementById("contactnumber").value;
+           var dt1 = pat1.test(dt);
+           var c = document.getElementById("mail").value;
+
+           if(c.endsWith("@gmail.com") == true || c.endsWith("@hotmail.com") ==true || c.endsWith("@yahoo.com") ==true){
+            document.getElementById("demo3").innerHTML = "valid e-mail format ";
+           }
+
+           if(c.endsWith("@gmail.com") == false && c.endsWith("@hotmail.com") ==false && c.endsWith("@yahoo.com") == false){
+            document.getElementById("demo3").innerHTML = " enter valid e-mail format ";
+           }
+
+
+            if(pat.test(x) == false){
+                document.getElementById("demo").innerHTML = " not valid Employee id";
+                
+            }
+            if(pat.test(x) ==true){
+                document.getElementById("demo").innerHTML = "Valid Input" ;
+            }
+
+            if(pat2.test(x1) == false){
+                document.getElementById("demo4").innerHTML = " Valid employee name";
+            }
+
+            if(pat2.test(x1) == true){
+                document.getElementById("demo4").innerHTML = "Not valid input employee name";
+                
+            }
+            
+            if(pat2.test(x3) ==true ){
+                document.getElementById("demo6").innerHTML = "Not  valid  input designation";
+                
+            }
+            if(pat2.test(x3) == false){
+                document.getElementById("demo6").innerHTML = " Valid designation ";
+            }
+
+            if(pat2.test(x2) == true){
+                document.getElementById("demo5").innerHTML = "  valid  input Age";
+                
+            }
+            if(pat2.test(x2) == false){
+                document.getElementById("demo5").innerHTML = "Not Valid Age ";
+            }
+           
+            if(pat2.test(x4) == true){
+                document.getElementById("demo7").innerHTML = "  valid  input salary";
+                
+            }
+            if(pat2.test(x4) == false){
+                document.getElementById("demo7").innerHTML = "Not Valid salary ";
+            }
+
+
+            if(pat2.test(x5) == true){
+                document.getElementById("demo8").innerHTML = "Valid  input Contact number";
+                
+            }
+            if(pat2.test(x5) == false){
+                document.getElementById("demo8").innerHTML = "Not Valid Contact Number ";
+            }
+
+            if(dt1 == true ){
+                dt1 =dt.split("-");
+                var days1 = dt1[1];
+                var month1 = dt1[0];
+                var year1 = dt1[2];
+
+                if(year1 > 999 && year1 <= 9999 ){
+                    
+                    if(month1 > 0 && month1 <= 12){
+                        if(month1 == 1|| month1 == 3 ||month1 == 5 || month1 == 7 ||month1 == 8 || month1 == 10 ||month1 == 12){
+                    
+                            if(days1 > 0 && days1 <= 31){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+
+                        else if( month1 == 4 || month1 == 6 || month1 == 9 || month1 == 11){
+                            if(days1 > 0 && days1 <= 30){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+                        else if( month1 == 2){
+                            if(days1 > 0 && days1 <= 28){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+
+                        else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";   
+                        }
+                    }
+                    else{
+                    document.getElementById("demo1").innerHTML = "Enter valid month ";
+                    }
+                }    
+                else{
+                    document.getElementById("demo1").innerHTML = "Enter valid year ";
+                }
+            }
+
+            if(dt1 == false){
+                document.getElementById("demo1").innerHTML = "Enter only MM-DD-YYYY";
+            }
+        }
+        
+    </script>
+</body>
+</html>

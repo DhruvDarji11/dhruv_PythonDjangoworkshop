@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75f81c1e5b.js" crossorigin="anonymous"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="home">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top ">
+        <div class="container-fluid" id="nav1">
+          <a class="navbar-brand" href="#">Mizuxe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto" id="nav2">
+              <li class="nav-item">
+                <a class="nav-link" href="#showcase">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#authors">Meet the authors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Shwocase -->
+      <section class="py-5" id="showcase">
+        <div class="primary-overlay text-white">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 text-center">
+                <h1 class="display-2 mt-5 pt-5">
+                  Do what you dream of...
+                </h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et.</p>
+                <a href="#" class="btn btn-outline-secondary btn-lg text-white"> 
+                  <em class="fa fa-arrow-right"></em> Read more</a>
+              </div>
+
+              <div class="col-lg-6 mt-5 py-4">
+                <img src="random.jpg" style="max-height: 500px;"  alt="random image" class="img-fluid d-none d-lg-block">                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <!--NEWSLETTER-->
+
+  <section class="bg-dark text-white py-5" id="newsletter">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <label for="name">
+          <input type="text" class="form-control form-control-lg" id="name" placeholder="Name">
+        </label>
+        </div>
+        <div class="col-md-4">
+          <label for="Email">
+          <input type="text" class="form-control form-control-lg" id="Email" placeholder="Email">
+        </label>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-lg btn-block"><en class="fa fa-envelope">
+          </en> Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!--Boxes-->
+
+
+<section class="py-5" id="boxes">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="cards text-center" >
+          <div class="card-body" id="card1">
+            <h3 class="text-primary">Be Better</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit?</p>
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-3">
+        <div class="cards text-center bg-primary text-white">
+          <div class="card-body">
+            <h3 >Be Smarter</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="cards text-center" id="card1">
+          <div class="card-body">
+            <h3 class="text-primary">Be Faster</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="cards text-center bg-primary text-white">
+          <div class="card-body">
+            <h3 >Be Stronger</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, suscipit?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--About section-->
+
+<section class="my-5 py-5 text-center bg-light" id="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col" id="aboutcol">
+        <h3 class="text-primary"> Why this Book?</h3>
+        <p class="text-muted">Lorem ipsum dolor sit amet. ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur,
+         architecto fuga dicta modi facere suscipit deleniti?</p>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col mt-3">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#aone">
+                <em class="fa fa-arrow-down"></em> <strong> Get inspired !!</strong>
+              </a>
+              </div>
+              <div id="aone" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Accusantium natus cum est laboriosam aliquam? Sunt eos eius veniam debitis iste.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" data-bs-target="#atwo">
+                  <em class="fa fa-arrow-down"></em> <strong>Get Educated!!</strong>
+                </a>
+                </div>
+                <div id="atwo" class="collapse " data-bs-parent="#accordion">
+                  <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                   Accusantium natus cum est laboriosam aliquam? Sunt eos eius veniam debitis iste.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <a class="btn" data-bs-toggle="collapse" data-bs-target="#athree">
+                    <em class="fa fa-arrow-down"></em> <strong>Open your mide to fullest!!</strong>
+                  </a>
+                  </div>
+                  <div id="athree" class="collapse " data-bs-parent="#accordion">
+                    <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Accusantium natus cum est laboriosam aliquam? Sunt eos eius veniam debitis iste.
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ 
+</section>
+
+
+
+<!--Authors meeting section-->
+
+  <section class="my-5 py-5 text-center" id="authors">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" id="aboutcol">
+          <h3 class="text-primary">Meet the Authors!!</h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos provident
+          impedit necessitatibus blanditiis, debitis laboriosam neque autem sunt corporis.</p>
+
+        </div>
+      </div>
+
+      <div class="row py-5 my-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="card" >
+            <div class="card-body" id="card2">
+              <img src="Sussan.jpg" id="img1" style="height: 120px;" alt="1st" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Susan Williams</h3>
+              <h5 class="text-muted">Lead writer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatum ex, consectetur sit laborum est laboriosam.</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><em class="fa fa-facebook"></em></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><em class="fa fa-instagram"></em></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><em class="fa fa-twitter"></em></a>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card" >
+              <div class="card-body" id="card2">
+                <img id="img1" src="Sample.jpg" style="height: 120px;" alt="2nd" class="img-fluid rounded-circle w-50 mb-3">
+                <h3>Dhruv Darji </h3>
+                <h5 class="text-muted">Web developer</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Voluptatum ex, consectetur sit laborum est laboriosam.</p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-facebook"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-instagram"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-twitter"></em></a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-6">
+            <div class="card" >
+              <div class="card-body" id="card2">
+                <img id="img1" src="Rajbabbar.jpg" style="height: 120px;" alt="1st" class="img-fluid rounded-circle w-50 mb-3">
+                <h3>Raj Babbar</h3>
+                <h5 class="text-muted">Content Creator</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Voluptatum ex, consectetur sit laborum est laboriosam.</p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-facebook"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-instagram"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-twitter"></em></a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card" >
+              <div class="card-body" id="card2">
+                <img id="img1" src="Simranchauhan.jpg" style="height: 120px;" alt="1st" class="img-fluid rounded-circle w-50 mb-3">
+                <h3>Simran Chauhan</h3>
+                <h5 class="text-muted">Designer</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Voluptatum ex, consectetur sit laborum est laboriosam.</p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-facebook"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-instagram"></em></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><em class="fa fa-twitter"></em></a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Contact section-->
+
+  <section class="mt-5 py-5  bg-light" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Get in touch!!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Illo corrupti magni sequi, consequuntur distinctio minus.</p>
+        
+      <form>  
+        <div class="form-group">
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><em class="fa fa-universal-access"></em></span>
+          <label for="name">
+          <input type="text" id="name" placeholder="Name">
+        </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><em class="fa fa-envelope"></em></span>
+          <label for="mail">
+          <input type="text" name="mail" id="mail" placeholder="Your email">
+        </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><em class="fa fa-pen"></em></span>
+        
+          <textarea class="form-control"  id="msg" placeholder="Message" rows="5" aria-label="msg"></textarea>
+        
+        </div>
+      </div>
+
+      <input type="button" value="submit" class="btn btn-primary btn-block btn-lg">
+      </form>
+       
+        </div>
+        </div> 
+      </div>
+  </section>
+
+
+  <footer class="container-fluid py-5 bg-primary text-white">
+    <div class="text-align-end">
+      <p class="px-5">
+        Copyright &copy; 2019
+      </p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

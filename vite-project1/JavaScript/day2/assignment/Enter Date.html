@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Date</title>
+</head>
+<body>
+    <h3>Please enter a date </h3>
+    <label for="date">Enter Date Here: </label>
+    <input type="text" name="date" id="demo" placeholder="MM-DD-YYYY">
+    <button type="button" onclick="myfun()">Submit</button>
+    <p id="demo1"></p>
+    <script>
+        function myfun(){
+
+            var dt = document.getElementById("demo").value;
+            var pat =/\d\d-\d\d-\d\d\d\d/;
+            var dt1 = pat.test(dt);
+            
+            
+            if(dt1 == true ){
+                dt1 =dt.split("-");
+                var days1 = dt1[1];
+                var month1 = dt1[0];
+                var year1 = dt1[2];
+
+                if(year1 > 999 && year1 <= 9999 ){
+                    
+                    if(month1 > 0 && month1 <= 12){
+                        if(month1 == 1|| month1 == 3 ||month1 == 5 || month1 == 7 ||month1 == 8 || month1 == 10 ||month1 == 12){
+                    
+                            if(days1 > 0 && days1 <= 31){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+
+                        else if( month1 == 4 || month1 == 6 || month1 == 9 || month1 == 11){
+                            if(days1 > 0 && days1 <= 30){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+                        else if( month1 == 2){
+                            if(days1 > 0 && days1 <= 28){
+                                document.getElementById("demo1").innerHTML = "Entered date is valid: " + dt;
+                            }
+                            else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";
+                            }
+                        }
+
+                        else{
+                            document.getElementById("demo1").innerHTML = "Enter valid date ";   
+                        }
+                    }
+                    else{
+                    document.getElementById("demo1").innerHTML = "Enter valid month ";
+                    }
+                }    
+                else{
+                    document.getElementById("demo1").innerHTML = "Enter valid year ";
+                }
+            }
+
+            else{
+                document.getElementById("demo1").innerHTML = "Enter only MM-DD-YYYY";
+            }
+        }   
+    </script>
+</body>
+</html>

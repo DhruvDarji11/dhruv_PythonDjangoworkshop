@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script>
+        var dt = new Date();
+        document.getElementById("demo").innerHTML=dt;
+        document.getElementById("demo1").innerHTML= dt.getDate();
+
+        const details={fname:"Dhruv", lname:"Darji", age:22};
+        const details1=["Dhruv","Darji","22"];
+        //var details1={fname:"Dhruv", lname:"Darji", age:"22"};
+        let detailsoutput = "";
+        for(let x in details){
+            detailsoutput +=  x + "<br>"; 
+        }
+        document.getElementById("demo2").innerHTML= detailsoutput;
+        var detailsoutput1 = "";
+        for (let z of details1){
+            detailsoutput1 += z + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = detailsoutput1;
+
+        let newSet = new Set(["name","surname","fathersname"]);
+        document.getElementById("demo4").innerHTML ="Set size :"+ newSet.size;
+        newSet.add("division");
+        document.getElementById("demo5").innerHTML ="Updated Set size :"+ newSet.size;
+
+        let string1 = "My name is Dhruv";
+        pat1= /\d/;
+        let a1 = string1.match(/Dh+/g);
+        let a2 = string1.match(/Dhu*/g);
+        let a3 = string1.match(/Dhu?/g);
+        let a4 = string1.match(/Dhruv/g);
+        let a5 = pat1.test("My name is Dhruv");
+        
+        document.getElementById("demo6").innerHTML ="1"+ a1;
+        document.getElementById("demo7").innerHTML ="2"+ a2;
+        document.getElementById("demo8").innerHTML ="3"+ a3;
+        document.getElementById("demo9").innerHTML ="4"+ a4;
+        document.getElementById("demo10").innerHTML ="5"+ a5;
+
+    </script>
+</body>
+</html>

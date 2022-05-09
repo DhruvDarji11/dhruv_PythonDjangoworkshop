@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogen</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/75f81c1e5b.js" crossorigin="anonymous"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0">
+        <div class="container ">
+          <a class="navbar-brand " href="#">Blogen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="blogen.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="posts.html">Post</a>
+                    </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="categories.html">Category</a>
+                    </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="users.html">user</a>
+                    </li> 
+                  </ul> 
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="profile.html">profile</a> 
+                      <a class="dropdown-item" href="settings.html">Settings</a> 
+                    </div>
+                    </li>
+
+                    <li class="nav-item ">
+                      <a class="nav-link" href="login.html">logout</a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+    </nav>
+
+
+
+    <!--Dashboard-->
+    <section class="container-fluid bg-primary text-white px-5">
+      <div class=" row px-5 ">
+        <div class="col px-5">
+          <h2 class=" px-5"><em class="fa fa-user"></em> Profile</h2>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--Actions-->
+
+    <section class="py-4 mb-4 bg-light" id="action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a href="blogen.html" class="btn  bg-white btn-block">
+              <em class="fa fa-arrow-left"></em> Back to dashboard</a>
+          </div>
+          <div class="col-md-3 ">
+            <a href="#" class="btn  btn-success btn-block" data-bs-toggle="modal" data-bs-target="#passwordmodal">
+              <em class="fa fa-lock"></em>change password</a>
+          </div>
+          <div class="col-md-3">
+            <a href="users.html" class="btn btn-danger btn-block">
+              <em class="fa fa-remove"></em> Delete profile</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  <!--PROFILE EDIT-->  
+
+  <section id="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit post</h4>
+            </div>
+           <div class="card-body">
+               <form >
+                   <div class="form-group">
+                       <label for="name">Name:</label>
+                       <input type="text" value="" class="form-control">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" value="xyz@gmail.com" class="form-control">
+                </div>
+
+                  <div class="form-group">
+                    <br>
+                    <label for="body">Bio:</label>
+                    <textarea  class="form-contol w-100" rows="5" >Lorem, ipsum dolor sit amet consectetur adipisicing elit.Inventore illo consequatur ipsa possimus similique error laboriosam consequuntur tempore ab,perspiciatis, nihil molestiae aspernatur repellat, eos unde dignissimos culpa atque! Quod. </textarea>
+                    <br>
+                  </div>
+               </form>
+           </div> 
+          </div>
+        </div>
+        <div class="col-md-3">
+            <h3>Profile picture</h3>
+            <img src="Sample.jpg" alt="profile image" class="d-block img-fluid mb-5 ">
+            <button class="btn btn-primary btn-block">Edit Image</button>
+            <button class="btn btn-danger btn-block">Delete Image</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; 2021 Blogen
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+   <!--Password modal-->
+   <div class="modal fade" id="passwordmodal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">change password</h5>
+          <button class="close" data-bs-dismiss="modal"> <em class="fa fa-times"></em></button>
+
+        </div>
+        <div class="modal-body">
+          <form >
+        
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control"> <br>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Confirm Password:</label>
+              <input type="password" class="form-control"> <br>
+            </div>
+          </form>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary" data-bs-dismiss="modal">Update password</button>
+          </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(180, 178, 178);
+}
+
+#navcolor > a{
+    color: black;
+}
+#navcolor > a:hover{
+    text-decoration: underline;
+}
+
+#freelisting > a{
+    background-color: orangered;
+    color : white;
+}
+#freelisting > a:hover{
+    text-decoration: underline;
+}
+
+#popularservices1{
+    border: 1px black solid;
+}
+
+#lastdiv1{
+    background-image: url(asset/jd\ last\ section.jpg);
+    
+}
+
+#carousel1{
+    position: static;
+}
+
+#carousel1 .carousel-control-prev, 
+#carousel1 .carousel-control-next {
+    bottom: 30px!important;
+    top: auto;
+}
+
+#carousel1 .carousel-control-prev {
+    right: calc(30px + 30px + 10x );
+}
+
+#carousel1 .carousel-control-next {
+    right: 30px;
+}
+
+#sectionone{
+    position: relative;
+}
+
+#search-bar{
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    width: 100%;
+}
+
+#main1{
+    
+    transition: 1s ease-in-out;
+}
+
+#editbox:hover{
+    padding-bottom: 0px;
+    transform: scale(1.1);
+    
+}
+
+#a2 > ul > a{
+    color: black;
+}
+
+#btn1{
+    background-color: orangered;
+}
+
+#button5{
+    width: 150px;
+    height: 70px;
+    position: fixed;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin-left: 1250px;
+    margin-top: 200px;
+    font-size: larger;
+    background-color: orangered;
+    border: 1px solid orangered;
+    
+}
+
+#button5:hover{
+    background-color: rgb(218, 63, 7);
+}
+
+#button6{
+    width: 150px;
+    height: 70px;
+    position: fixed;
+    transform: rotate(270deg);
+    padding: 10px;
+    margin-left: 1250px;
+    margin-top: 340px;
+    font-size: larger;
+}

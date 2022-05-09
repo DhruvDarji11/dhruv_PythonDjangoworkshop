@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <p >Functional Hoisting is used to call a function before function is defined.</p>
+    <p>It works same as the normal function but the function call and definition is different.</p>
+    <p>Here function takes ip and gives square of that number.</p>
+    <p id="demo"></p>
+    <script>
+        const x = myfun(5);
+        document.getElementById("demo").innerHTML = x;
+        function myfun(x){
+            return x * x;
+        }
+    </script>
+</body>
+</html>

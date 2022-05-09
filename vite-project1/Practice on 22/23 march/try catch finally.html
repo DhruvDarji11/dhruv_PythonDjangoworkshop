@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try catch finally</title>
+    <script>
+        function myfun() {
+            let num = document.getElementById("input1").value;
+            try{
+
+                if(num > 99) throw "Number too big";
+
+                if(num < 10) throw "Number too small";
+
+                if(num =="") throw "Enter valid number";
+
+                if(isNaN(num)) throw "No number entered";
+                num = Number(num); 
+            }
+            catch(err){
+                document.getElementById("demo").innerHTML = "Error : "+err;
+            }
+            finally{
+                document.getElementById("input1").value = " ";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <label for="input">Enter Number between 10 to 99:</label>
+    <input type="text" id="input1"> 
+    <button type="button" onclick="myfun()">Click to check validy !!</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+</html>

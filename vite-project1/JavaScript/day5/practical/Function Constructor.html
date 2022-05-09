@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Constructor</title>
+</head>
+<body>
+    <p>Area of rectangle using Constructor</p> <br>
+    Length:<input type="text" id="len"> <br> <br>
+    Width:<input type="text" id="wid"><br> <br>
+    <button type="button" onclick="myfun()">Submit</button> <br> <br>
+    <p id="demo1"></p>
+    <script>
+        function myfun(){
+
+            const l =document.getElementById("len").value;
+            const w = document.getElementById("wid").value;
+            const area = new Function("a","b" ,"return a * b");
+            const z = area(l,w);
+            document.getElementById("demo1").innerHTML = z;
+        }
+    </script>
+</body>
+</html>

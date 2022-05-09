@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Timer</title>
+</head>
+<body>
+    <p id="countdown"></p>
+    <script>
+        let startingHour = 3;
+        let startingMinutes= startingHour * 60;
+        let time = startingMinutes * 60;
+
+        const countdownEl = document.getElementById("countdown");
+
+        setInterval(updateCountdown,1000);
+
+        function updateCountdown(){
+            let hours = Math.floor(time/(60*60));
+            let minutes = Math.floor((time/60) % 60);
+            let seconds =Math.floor(time % 60);
+        
+            hours= hours<10? '0'+hours: hours; //ternary operator
+            minutes = minutes < 10 ? '0' + minutes: minutes; 
+            seconds= seconds < 10 ? '0' + seconds : seconds; 
+
+            countdownEl.innerHTML = `${hours}:${minutes}:${seconds} `;
+            time--;
+            if(hours <= 0 && minutes<=0 && seconds<=0){
+                countdownEl.innerHTML="Time Experied";
+            }
+        }
+
+    </script>
+</body>
+</html>

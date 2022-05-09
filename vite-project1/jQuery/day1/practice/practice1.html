@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css effect on para</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").css("background-color", "lightblue");
+            $("#helpText").hover(function(){
+                    $("#helptext").hide();
+                },
+            function(){
+                $("#helptext").show();
+            }); 
+
+            $('#techForm').on('change', function(){
+
+                var technam =$("input[name='technology']:checked").val();
+                $('#output1').text('Selected technolody is : ' + technam);
+                
+            });
+            $("#value1").hide();                
+            $("#value2").hide();                
+            $("#value3").hide();                
+            $("#value4").hide();                
+            $("#value5").hide();                
+            $("#value6").hide();                
+            $("#value7").hide();                
+            
+            $("#php1").click(function(){
+                $("#value1").show();                
+            });
+            $("#aspnet1").click(function(){
+                $("#value2").show();                
+            });
+            $("#net1").click(function(){
+                $("#value3").show();                
+            });
+            $("#jsp1").click(function(){
+                $("#value4").show();                
+            });
+            $("#perl1").click(function(){
+                $("#value5").show();                
+            });
+            $("#coldFusion1").click(function(){
+                $("#value6").show();                
+            });
+            $("#other1").click(function(){
+                $("#value7").show();                
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <p>This is dummy paragraph and its background-color is blue.</p>
+    <span id="helpText">Hover the mouse over here to see the hide/show effect .</span> <br>
+    <p id="helptext">This is the hide/show text inside span #helpText .</p> 
+    <span id="selectedTechnology">Please select a technology:</span> 
+    <form id="techForm">
+        <input type="radio" name="technology" id="php" value="PHP"><span id="php1">PHP</span>
+        <input type="radio" name="technology" id="aspnet" value="ASP.NET"><span id="aspnet1">ASP.NET</span>
+        <input type="radio" name="technology" id="net" value=".NET"><span id="net1">.NET</span>
+        <input type="radio" name="technology" id="jsp" value="JSP"><span id="jsp1">JSP</span>
+        <input type="radio" name="technology" id="perl" value="PERL"><span id="perl1">PERL</span>
+        <input type="radio" name="technology" id="coldFusion" value="Cold Fusion"><span id="coldFusion1">Cold Fusion</span>
+        <input type="radio" name="technology" id="other" value="Other"><span id="other1">Other</span>
+    </form>
+    <p id="output1"></p>
+    <p id="value1">You have selected :PHP</p>
+    <p id="value2">You have selected :ASP.NET</p>
+    <p id="value3">You have selected :.NET</p>
+    <p id="value4">You have selected :JSP</p>
+    <p id="value5">You have selected :PERL</p>
+    <p id="value6">You have selected :Cold Fusion</p>
+    <p id="value7">You have selected :Other</p>
+</body>
+</html>

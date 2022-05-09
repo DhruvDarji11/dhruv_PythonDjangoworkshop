@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var par = $("span").parent().css("color","red");
+            //console.log(par);
+            //par;
+            $("span").parent().css({"color": "red", "border": "2px solid red"});
+        });
+    </script>
+</head>
+<body>
+     <div id="p1"> 
+        <p>this is parent 1</p>
+        <div>
+             this is parent inside div2
+            <span>child 1 of parent2</span><br>
+        </div>
+    </div> 
+    <div>div1<br />
+        <p>this is inside div1</p>
+        <div>div2<br />
+            <span>This is span element</span>
+        </div>
+    </div>
+</body>
+</html>
